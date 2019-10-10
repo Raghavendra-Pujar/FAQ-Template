@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <title>HOME | FAQ</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home FAQ | FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-10 offset-1 col-md-6 offset-md-3 col-sm-10 offset-sm-1">
+        <h1>Login</h1>
+        <form #loginForm="ngForm" (ngSubmit)='login()' ngNativeValidate>
+          <div class="form-group">
+            <label for="lemail">UserName</label>
+            <input required  [(ngModel)]='loginEmail' name='loginEmail' #loginMail="ngModel"
+              type="text" class="form-control" id="lemail" placeholder="Enter UserName">
+          </div>
+          <div class="form-group">
+            <label for="lpassword">Password</label>
+            <input required  [(ngModel)]='loginPassword' #loginPass="ngModel" name='loginPassword' type="password"
+              class="form-control" id="lpassword" placeholder="Enter Password">
+          </div>
+          <div class="form-group">
+            <button type="submit">Log In</button>
+          </div>
+
+        </form>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
